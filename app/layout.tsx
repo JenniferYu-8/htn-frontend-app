@@ -1,7 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'], // Adjust as needed
+})
+
 
 export const metadata = {
   title: 'HTN Front end challenge',
@@ -18,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative`}>{children}</body>
+      <body className={`${poppins.className} bg-gray-900 text-gray-950 relative`}>{children}</body>
     </html>
   )
 }
