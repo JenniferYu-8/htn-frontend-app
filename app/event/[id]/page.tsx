@@ -62,7 +62,7 @@ const EventPage = () => {
       <div className="container mx-auto px-6 py-8">
         {/* Home Icon Button */}
         <Link href="/" passHref>
-          <button className="flex items-center justify-center mb-5 text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
+          <button className="flex items-center justify-center mt-[4rem] mb-5 text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
             <HiArrowLeft className="h-6 w-6" />
           </button>
         </Link>
